@@ -10,7 +10,7 @@ This package is in response to a question at: https://tex.stackexchange.com/ques
 # Installation
 
 Currently, the package isn't available at CTAN. Copy the `.sty` file to the same directory as the `.tex` files where you want to use it in. Or, copy the text contents,
-paste them in your text editor, and save them using the `.sty` extension, in the directory mentioned.
+paste them in your text editor, and save them with a `.sty` extension into the directory mentioned.
 
 # Use
 
