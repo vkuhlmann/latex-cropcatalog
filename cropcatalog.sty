@@ -1,0 +1,215 @@
+\NeedsTeXFormat{LaTeX2e}[1994/06/01]
+\ProvidesPackage{cropcatalog}[2021/05/26 cropcatalog v1.0.0]
+
+%% Copyright (c) 2021 Vincent Kuhlmann
+%% Creative Commons CC BY-SA 4.0
+
+\RequirePackage{xkeyval}
+\RequirePackage{graphicx}
+\RequirePackage{pdfpages}
+\RequirePackage{etoolbox}
+\RequirePackage{adjustbox}
+\RequirePackage{xcolor}
+
+\newlength\cropzone@paperwidth
+\newlength\cropzone@paperheight
+\def\cropzone@page{}
+\newlength\cropzone@width
+\newlength\cropzone@height
+\newlength\cropzone@depth
+\newlength\cropzone@xpos
+\newlength\cropzone@ypos
+
+\newlength\cropzone@trimleft
+\newlength\cropzone@trimbottom
+\newlength\cropzone@trimright
+\newlength\cropzone@trimtop
+
+\def\cropcatalog@extractSource{}
+\def\cropcatalog@extractCatalog{}
+\def\cropcatalog@extractOutputCatalog{}
+
+\define@key{cropcatalog}{source}{
+    \gdef\cropcatalog@extractSource{#1}
+}
+\define@key{cropcatalog}{catalog}{
+    \gdef\cropcatalog@extractCatalog{#1}
+}
+\define@key{cropcatalog}{outputCatalog}{
+    \gdef\cropcatalog@extractOutputCatalog{#1}
+}
+\define@boolkey{cropcatalog}[cropcatalog@]{cropframe}[true]{
+}
+
+\define@key{cropcatalog}{nocropframe}[]{%
+    \setkeys{cropcatalog}{cropframe=false}%
+}
+
+\setkeys{cropcatalog}{cropframe}
+
+\DeclareOptionX*{%
+	\def\mytemptemp#1{%
+        \setkeys{cropcatalog}{#1}%
+	}%
+	\expandafter\mytemptemp\expandafter{\CurrentOption}%
+}
+
+\ExecuteOptionsX{}
+\ProcessOptionsX\relax
+
+
+\def\cropzone#1#2#3{%
+    \setkeys{cropzone}{#3}%
+}
+
+\let\old@do\do
+\def\do#1{
+    \define@key{cropzone}{#1}{%
+        \expandafter\global\csname cropzone@#1\endcsname=\dimexpr ##1\relax
+    }
+}
+
+\do{paperwidth}\do{paperheight}\do{width}\do{height}\do{depth}\do{xpos}\do{ypos}
+\let\do\old@do
+
+\define@key{cropzone}{page}{%
+    \gdef\cropzone@page{#1}%
+}
+
+\def\calculatetrim{%
+    \global\cropzone@trimleft=\cropzone@xpos
+    \global\cropzone@trimright=\dimexpr\cropzone@paperwidth-(\cropzone@xpos+\cropzone@width)\relax
+    \global\cropzone@trimbottom=\dimexpr\cropzone@ypos-\cropzone@depth\relax
+    \global\cropzone@trimtop=\dimexpr\cropzone@paperheight-\cropzone@ypos-\cropzone@height\relax
+}
+
+\def\retrievezone#1{%
+    \typeout{Retrieving zone #1...}%
+    \IfFileExists{\cropcatalog@extractCatalog}{%
+        \makeatletter
+        \bgroup
+            \let\sep\or
+            \def\startsep{\ifcase\numexpr (#1)-1\relax}%
+            \let\endsep\fi
+            \input{\cropcatalog@extractCatalog}%
+        \egroup
+        \typeout{Paperwidth: \the\cropzone@paperwidth}%
+        \typeout{Paperheight: \the\cropzone@paperheight}%
+        \typeout{Page: \cropzone@page}%
+        \typeout{Xpos: \the\cropzone@xpos}%
+        \typeout{Ypos: \the\cropzone@ypos}%
+        \calculatetrim
+    }{%
+        \PackageError{cropcatalog}{Catalog file not found!}%
+    }%
+}
+
+\newcommand\prepareExtract[1]{%
+    \retrievezone{#1}%
+    %
+    \def\cropcatalog@includeargs{trim={\cropzone@trimleft, \cropzone@trimbottom,
+    \cropzone@trimright, \cropzone@trimtop},clip}%
+    %
+    \def\trimvalues{left: \the\cropzone@trimleft, bottom: \the\cropzone@trimbottom,
+    right: \the\cropzone@trimright, top: \the\cropzone@trimtop}%
+}
+
+\newcommand\extractAsPage[1]{
+    \prepareExtract{#1}
+    \PackageInfo{cropcatalog}{Trim for includepdf: \trimvalues}
+    \expandafter\includepdf\expandafter[\cropcatalog@includeargs,fitpaper]{\cropcatalog@extractSource}
+}
+
+\newcommand\extractAsGraphic[2][]{%
+    \prepareExtract{#2}%
+    \PackageInfo{cropcatalog}{Trim for includepdf: \trimvalues}%
+    \expandafter\includegraphics\expandafter[\cropcatalog@includeargs,#1]{\cropcatalog@extractSource}%
+}
+
+\newsavebox\cropcontent
+
+\newwrite\cropcatalog
+\newbool{catalogWriteOpen}
+\boolfalse{catalogWriteOpen}
+
+\def\ensureCatalogOpen{
+    \unless\ifcatalogWriteOpen
+        \enableCatalogWrite
+    \fi
+}
+
+\def\enableCatalogWrite{%
+    \ifx\cropcatalog@extractOutputCatalog\@empty%
+        \xdef\cropcatalog@extractOutputCatalog{\jobname_cropcatalog.txt}%
+    \fi
+    \booltrue{catalogWriteOpen}%
+    \immediate\openout\cropcatalog={\cropcatalog@extractOutputCatalog}\relax
+    \write\cropcatalog{\noexpand\@ifundefined{sep}{\noexpand\def\noexpand\sep{}}{}\@percentchar}%
+    \write\cropcatalog{\noexpand\@ifundefined{startsep}{\noexpand\def\noexpand\startsep{}}{}\@percentchar}%
+    \write\cropcatalog{\noexpand\@ifundefined{endsep}{\noexpand\def\noexpand\endsep{}}{}\@percentchar}%
+    \write\cropcatalog{\noexpand\startsep}%
+    \AtEndDocument{%
+        \write\cropcatalog{\noexpand\endsep}%
+    }%
+}
+
+\ifx\cropcatalog@extractOutputCatalog\@empty
+    \xdef\cropcatalog@extractOutputCatalog{\jobname_cropcatalog.txt}%
+    \IfFileExists{\cropcatalog@extractOutputCatalog}{
+        \ensureCatalogOpen
+    }{}
+\else
+    % \IfFileExists{\cropcatalog@extractOutputCatalog}{
+    %     \ensureCatalogOpen
+    % }{}
+    \ensureCatalogOpen
+\fi
+
+\newcounter{cropzone}
+\setcounter{cropzone}{0}
+
+\def\curzoneinfo{}
+
+\def\cropbox#1{%
+    \ensureCatalogOpen
+    \ifcatalogWriteOpen
+        \stepcounter{cropzone}%
+        \savebox\cropcontent{%
+            \pdfsavepos
+            % \write\cropcatalog{%
+            %     \space\space\noexpand\cropzonepos{\thecropzone}{page=\thepage, xpos=\the\dimexpr\pdflastxpos sp\relax,
+            %     ypos=\the\dimexpr\pdflastypos sp\relax}\@percentchar
+            % }
+            %}
+            #1
+            %\adjustbox{margin=-2pt,cframe=red 2pt 0pt,valign=T}{#1}%
+        }%
+        \edef\curzoneinfo{%
+            \noexpand\space\noexpand\space\noexpand\noexpand\noexpand\cropzone
+            {\thecropzone}{}%
+            {%
+            xpos=\noexpand\the\noexpand\dimexpr\noexpand\pdflastxpos sp\noexpand\relax,
+            ypos=\noexpand\the\noexpand\dimexpr\noexpand\pdflastypos sp\noexpand\relax,
+            width=\the\wd\cropcontent, height=\the\ht\cropcontent,
+            depth=\the\dp\cropcontent, paperwidth=\noexpand\the\noexpand\paperwidth, paperheight=\noexpand\the\noexpand\paperheight,
+            page=\noexpand\thepage
+            }\@percentchar
+        }%
+        \leavevmode
+        \ifcropcatalog@cropframe
+            \adjustbox{cframe=red 2pt 0.5px 0pt,margin=\dimexpr-2pt-0.5px\relax}{\usebox\cropcontent}%
+        \else
+            \adjustbox{}{\usebox\cropcontent}%
+        \fi
+        % \immediate\write\cropcatalog{%
+        %     \space\space\noexpand\cropzonesize{\thecropzone}{%
+        %         width=\the\wd\cropcontent, height=\the\ht\cropcontent,
+        %         depth=\the\dp\cropcontent, paperwidth=\the\paperwidth, paperheight=\the\paperheight
+        %     }\@percentchar
+        % }
+        \expandafter\write\expandafter\cropcatalog\expandafter{\curzoneinfo}%
+        \write\cropcatalog{\noexpand\sep}%
+    \fi
+}
+
+

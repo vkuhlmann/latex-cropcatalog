@@ -1,0 +1,394 @@
+This is pdfTeX, Version 3.141592653-2.6-1.40.22 (MiKTeX 21.3) (preloaded format=pdflatex 2021.4.18)  26 MAY 2021 15:28
+entering extended mode
+**d:/Projects/latexscratch/cropcatalog/catalogextract.tex
+(d:/Projects/latexscratch/cropcatalog/catalogextract.tex
+LaTeX2e <2020-10-01> patch level 4
+L3 programming layer <2021-02-18> (C:\Users\Vincent\AppData\Local\Programs\MiKTeX\tex/latex/base\article.cls
+Document Class: article 2020/04/10 v1.4m Standard LaTeX document class
+(C:\Users\Vincent\AppData\Local\Programs\MiKTeX\tex/latex/base\size10.clo
+File: size10.clo 2020/04/10 v1.4m Standard LaTeX file (size option)
+)
+\c@part=\count179
+\c@section=\count180
+\c@subsection=\count181
+\c@subsubsection=\count182
+\c@paragraph=\count183
+\c@subparagraph=\count184
+\c@figure=\count185
+\c@table=\count186
+\abovecaptionskip=\skip47
+\belowcaptionskip=\skip48
+\bibindent=\dimen138
+) (C:\Users\Vincent\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.sty
+Package: geometry 2020/01/02 v5.9 Page Geometry
+ (C:\Users\Vincent\AppData\Local\Programs\MiKTeX\tex/latex/graphics\keyval.sty
+Package: keyval 2014/10/28 v1.15 key=value parser (DPC)
+\KV@toks@=\toks15
+) (C:\Users\Vincent\AppData\Local\Programs\MiKTeX\tex/generic/iftex\ifvtex.sty
+Package: ifvtex 2019/10/25 v1.7 ifvtex legacy package. Use iftex instead.
+ (C:\Users\Vincent\AppData\Local\Programs\MiKTeX\tex/generic/iftex\iftex.sty
+Package: iftex 2020/03/06 v1.0d TeX engine tests
+))
+\Gm@cnth=\count187
+\Gm@cntv=\count188
+\c@Gm@tempcnt=\count189
+\Gm@bindingoffset=\dimen139
+\Gm@wd@mp=\dimen140
+\Gm@odd@mp=\dimen141
+\Gm@even@mp=\dimen142
+\Gm@layoutwidth=\dimen143
+\Gm@layoutheight=\dimen144
+\Gm@layouthoffset=\dimen145
+\Gm@layoutvoffset=\dimen146
+\Gm@dimlist=\toks16
+ (C:\Users\Vincent\AppData\Local\Programs\MiKTeX\tex/latex/geometry\geometry.cfg)) (cropcatalog.sty
+Package: cropcatalog 2021/05/26 cropcatalog v1.0.0
+ (C:\Users\Vincent\AppData\Local\Programs\MiKTeX\tex/latex/xkeyval\xkeyval.sty
+Package: xkeyval 2020/11/20 v2.8 package option processing (HA)
+ (C:\Users\Vincent\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkeyval.tex (C:\Users\Vincent\AppData\Local\Programs\MiKTeX\tex/generic/xkeyval\xkvutils.tex
+\XKV@toks=\toks17
+\XKV@tempa@toks=\toks18
+)
+\XKV@depth=\count190
+File: xkeyval.tex 2014/12/03 v2.7a key=value parser (HA)
+)) (C:\Users\Vincent\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphicx.sty
+Package: graphicx 2020/09/09 v1.2b Enhanced LaTeX Graphics (DPC,SPQR)
+ (C:\Users\Vincent\AppData\Local\Programs\MiKTeX\tex/latex/graphics\graphics.sty
+Package: graphics 2020/08/30 v1.4c Standard LaTeX Graphics (DPC,SPQR)
+ (C:\Users\Vincent\AppData\Local\Programs\MiKTeX\tex/latex/graphics\trig.sty
+Package: trig 2016/01/03 v1.10 sin cos tan (DPC)
+) (C:\Users\Vincent\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\graphics.cfg
+File: graphics.cfg 2016/06/04 v1.11 sample graphics configuration
+)
+Package graphics Info: Driver file: pdftex.def on input line 105.
+ (C:\Users\Vincent\AppData\Local\Programs\MiKTeX\tex/latex/graphics-def\pdftex.def
+File: pdftex.def 2020/10/05 v1.2a Graphics/color driver for pdftex
+))
+\Gin@req@height=\dimen147
+\Gin@req@width=\dimen148
+) (C:\Users\Vincent\AppData\Local\Programs\MiKTeX\tex/latex/pdfpages\pdfpages.sty
+Package: pdfpages 2021/03/06 v0.5t Insert pages of external PDF documents (AM)
+ (C:\Users\Vincent\AppData\Local\Programs\MiKTeX\tex/latex/base\ifthen.sty
+Package: ifthen 2014/09/29 v1.1c Standard LaTeX ifthen package (DPC)
+) (C:\Users\Vincent\AppData\Local\Programs\MiKTeX\tex/latex/latex-tools\calc.sty
+Package: calc 2017/05/25 v4.3 Infix arithmetic (KKT,FJ)
+\calc@Acount=\count191
+\calc@Bcount=\count192
+\calc@Adimen=\dimen149
+\calc@Bdimen=\dimen150
+\calc@Askip=\skip49
+\calc@Bskip=\skip50
+LaTeX Info: Redefining \setlength on input line 80.
+LaTeX Info: Redefining \addtolength on input line 81.
+\calc@Ccount=\count193
+\calc@Cskip=\skip51
+) (C:\Users\Vincent\AppData\Local\Programs\MiKTeX\tex/latex/eso-pic\eso-pic.sty
+Package: eso-pic 2020/10/14 v3.0a eso-pic (RN)
+\ESO@tempdima=\dimen151
+\ESO@tempdimb=\dimen152
+ (C:\Users\Vincent\AppData\Local\Programs\MiKTeX\tex/latex/xcolor\xcolor.sty
+Package: xcolor 2016/05/11 v2.12 LaTeX color extensions (UK)
+ (C:\Users\Vincent\AppData\Local\Programs\MiKTeX\tex/latex/graphics-cfg\color.cfg
+File: color.cfg 2016/01/02 v1.6 sample color configuration
+)
+Package xcolor Info: Driver file: pdftex.def on input line 225.
+Package xcolor Info: Model `cmy' substituted by `cmy0' on input line 1348.
+Package xcolor Info: Model `hsb' substituted by `rgb' on input line 1352.
+Package xcolor Info: Model `RGB' extended on input line 1364.
+Package xcolor Info: Model `HTML' substituted by `rgb' on input line 1366.
+Package xcolor Info: Model `Hsb' substituted by `hsb' on input line 1367.
+Package xcolor Info: Model `tHsb' substituted by `hsb' on input line 1368.
+Package xcolor Info: Model `HSB' substituted by `hsb' on input line 1369.
+Package xcolor Info: Model `Gray' substituted by `gray' on input line 1370.
+Package xcolor Info: Model `wave' substituted by `hsb' on input line 1371.
+))
+\AM@pagewidth=\dimen153
+\AM@pageheight=\dimen154
+\AM@fboxrule=\dimen155
+ (C:\Users\Vincent\AppData\Local\Programs\MiKTeX\tex/latex/pdfpages\pppdftex.def
+File: pppdftex.def 2021/03/06 v0.5t Pdfpages driver for pdfTeX (AM)
+)
+\pdfpages@includegraphics@status=\count194
+\AM@pagebox=\box47
+\AM@global@opts=\toks19
+\AM@pagecnt=\count195
+\AM@toc@title=\toks20
+\c@AM@survey=\count196
+\AM@templatesizebox=\box48
+) (C:\Users\Vincent\AppData\Local\Programs\MiKTeX\tex/latex/etoolbox\etoolbox.sty
+Package: etoolbox 2020/10/05 v2.5k e-TeX tools for LaTeX (JAW)
+\etb@tempcnta=\count197
+) (C:\Users\Vincent\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\adjustbox.sty
+Package: adjustbox 2020/08/19 v1.3 Adjusting TeX boxes (trim, clip, ...)
+ (C:\Users\Vincent\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\adjcalc.sty
+Package: adjcalc 2012/05/16 v1.1 Provides advanced setlength with multiple back-ends (calc, etex, pgfmath)
+) (C:\Users\Vincent\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\trimclip.sty
+Package: trimclip 2020/08/19 v1.2 Trim and clip general TeX material
+ (C:\Users\Vincent\AppData\Local\Programs\MiKTeX\tex/latex/collectbox\collectbox.sty
+Package: collectbox 2012/05/17 v0.4b Collect macro arguments as boxes
+\collectedbox=\box49
+)
+\tc@llx=\dimen156
+\tc@lly=\dimen157
+\tc@urx=\dimen158
+\tc@ury=\dimen159
+Package trimclip Info: Using driver 'tc-pdftex.def'.
+ (C:\Users\Vincent\AppData\Local\Programs\MiKTeX\tex/latex/adjustbox\tc-pdftex.def
+File: tc-pdftex.def 2019/01/04 v2.2 Clipping driver for pdftex
+))
+\adjbox@Width=\dimen160
+\adjbox@Height=\dimen161
+\adjbox@Depth=\dimen162
+\adjbox@Totalheight=\dimen163
+\adjbox@pwidth=\dimen164
+\adjbox@pheight=\dimen165
+\adjbox@pdepth=\dimen166
+\adjbox@ptotalheight=\dimen167
+ (C:\Users\Vincent\AppData\Local\Programs\MiKTeX\tex/latex/ifoddpage\ifoddpage.sty
+Package: ifoddpage 2016/04/23 v1.1 Conditionals for odd/even page detection
+\c@checkoddpage=\count198
+) (C:\Users\Vincent\AppData\Local\Programs\MiKTeX\tex/latex/varwidth\varwidth.sty
+Package: varwidth 2009/03/30 ver 0.92;  Variable-width minipages
+\@vwid@box=\box50
+\sift@deathcycles=\count199
+\@vwid@loff=\dimen168
+\@vwid@roff=\dimen169
+))
+\cropzone@paperwidth=\skip52
+\cropzone@paperheight=\skip53
+\cropzone@width=\skip54
+\cropzone@height=\skip55
+\cropzone@depth=\skip56
+\cropzone@xpos=\skip57
+\cropzone@ypos=\skip58
+\cropzone@trimleft=\skip59
+\cropzone@trimbottom=\skip60
+\cropzone@trimright=\skip61
+\cropzone@trimtop=\skip62
+\cropcontent=\box51
+\cropcatalog=\write3
+\c@cropzone=\count266
+) (C:\Users\Vincent\AppData\Local\Programs\MiKTeX\tex/latex/l3backend\l3backend-pdftex.def
+File: l3backend-pdftex.def 2021-03-18 L3 backend support: PDF output (pdfTeX)
+\l__color_backend_stack_int=\count267
+\l__pdf_internal_box=\box52
+) (d:\Projects\latexscratch\cropcatalog\auxdir\catalogextract.aux)
+\openout1 = `catalogextract.aux'.
+
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for TS1/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 9.
+LaTeX Font Info:    ... okay on input line 9.
+
+*geometry* driver: auto-detecting
+*geometry* detected driver: pdftex
+*geometry* verbose mode - [ preamble ] result:
+* driver: pdftex
+* paper: a6paper
+* layout: <same size as paper>
+* layoutoffset:(h,v)=(0.0pt,0.0pt)
+* modes: 
+* h-part:(L,W,R)=(44.81355pt, 209.12683pt, 44.81355pt)
+* v-part:(T,H,B)=(50.5326pt, 294.76926pt, 75.79893pt)
+* \paperwidth=298.75394pt
+* \paperheight=421.10078pt
+* \textwidth=209.12683pt
+* \textheight=294.76926pt
+* \oddsidemargin=-27.45644pt
+* \evensidemargin=-27.45644pt
+* \topmargin=-58.7374pt
+* \headheight=12.0pt
+* \headsep=25.0pt
+* \topskip=10.0pt
+* \footskip=30.0pt
+* \marginparwidth=65.0pt
+* \marginparsep=11.0pt
+* \columnsep=10.0pt
+* \skip\footins=9.0pt plus 4.0pt minus 2.0pt
+* \hoffset=0.0pt
+* \voffset=0.0pt
+* \mag=1000
+* \@twocolumnfalse
+* \@twosidefalse
+* \@mparswitchfalse
+* \@reversemarginfalse
+* (1in=72.27pt=25.4mm, 1cm=28.453pt)
+
+(C:\Users\Vincent\AppData\Local\Programs\MiKTeX\tex/context/base/mkii\supp-pdf.mkii
+[Loading MPS to PDF converter (version 2006.09.02).]
+\scratchcounter=\count268
+\scratchdimen=\dimen170
+\scratchbox=\box53
+\nofMPsegments=\count269
+\nofMParguments=\count270
+\everyMPshowfont=\toks21
+\MPscratchCnt=\count271
+\MPscratchDim=\dimen171
+\MPnumerator=\count272
+\makeMPintoPDFobject=\count273
+\everyMPtoPDFconversion=\toks22
+) (C:\Users\Vincent\AppData\Local\Programs\MiKTeX\tex/latex/epstopdf-pkg\epstopdf-base.sty
+Package: epstopdf-base 2020-01-24 v2.11 Base part for package epstopdf
+Package epstopdf-base Info: Redefining graphics rule for `.eps' on input line 485.
+ (C:\Users\Vincent\AppData\Local\Programs\MiKTeX\tex/latex/00miktex\epstopdf-sys.cfg
+File: epstopdf-sys.cfg 2021/03/18 v2.0 Configuration of epstopdf for MiKTeX
+)) (C:\Users\Vincent\AppData\Local\Programs\MiKTeX\tex/latex/pdflscape\pdflscape.sty
+Package: pdflscape 2019/12/05 v0.12 Display of landscape pages in PDF (HO)
+ (C:\Users\Vincent\AppData\Local\Programs\MiKTeX\tex/latex/graphics\lscape.sty
+Package: lscape 2020/05/28 v3.02 Landscape Pages (DPC)
+)
+Package pdflscape Info: Auto-detected driver: pdftex on input line 81.
+)
+Retrieving zone 1...
+(d:\Projects\latexscratch\cropcatalog\auxdir\catalogsource_cropcatalog.txt)
+Paperwidth: 597.50787pt
+Paperheight: 845.04684pt
+Page: 1
+Xpos: 143.60332pt
+Ypos: 518.77686pt
+Package cropcatalog Info: Trim for includepdf: left: 143.60332pt, bottom: 518.77686pt, right: 411.68228pt, top: 306.26999pt on input line 10.
+<outdir/catalogsource.pdf, id=1, 597.50829pt x 845.0471pt>
+File: outdir/catalogsource.pdf Graphic file (type pdf)
+<use outdir/catalogsource.pdf>
+Package pdftex.def Info: outdir/catalogsource.pdf  used on input line 10.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+File: outdir/catalogsource.pdf Graphic file (type pdf)
+<use outdir/catalogsource.pdf>
+Package pdftex.def Info: outdir/catalogsource.pdf  used on input line 10.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+<outdir/catalogsource.pdf, id=4, page=1, 597.50829pt x 845.0471pt>
+File: outdir/catalogsource.pdf Graphic file (type pdf)
+<use outdir/catalogsource.pdf, page 1>
+Package pdftex.def Info: outdir/catalogsource.pdf , page1 used on input line 10.
+(pdftex.def)             Requested size: 42.22258pt x 20.00023pt.
+File: outdir/catalogsource.pdf Graphic file (type pdf)
+<use outdir/catalogsource.pdf, page 1>
+Package pdftex.def Info: outdir/catalogsource.pdf , page1 used on input line 10.
+(pdftex.def)             Requested size: 42.22258pt x 20.00023pt.
+File: outdir/catalogsource.pdf Graphic file (type pdf)
+<use outdir/catalogsource.pdf, page 1>
+Package pdftex.def Info: outdir/catalogsource.pdf , page1 used on input line 10.
+(pdftex.def)             Requested size: 42.22258pt x 20.00023pt.
+File: outdir/catalogsource.pdf Graphic file (type pdf)
+<use outdir/catalogsource.pdf, page 1>
+Package pdftex.def Info: outdir/catalogsource.pdf , page1 used on input line 10.
+(pdftex.def)             Requested size: 42.22258pt x 20.00023pt.
+File: outdir/catalogsource.pdf Graphic file (type pdf)
+<use outdir/catalogsource.pdf, page 1>
+Package pdftex.def Info: outdir/catalogsource.pdf , page1 used on input line 10.
+(pdftex.def)             Requested size: 42.22258pt x 20.00023pt.
+[1
+
+ <./outdir/catalogsource.pdf{C:/Users/Vincent/AppData/Local/MiKTeX/pdftex/config/pdftex.map}>]
+Retrieving zone 2...
+(d:\Projects\latexscratch\cropcatalog\auxdir\catalogsource_cropcatalog.txt)
+Paperwidth: 597.50787pt
+Paperheight: 845.04684pt
+Page: 1
+Xpos: 189.15892pt
+Ypos: 518.77686pt
+Package cropcatalog Info: Trim for includepdf: left: 189.15892pt, bottom: 518.77686pt, right: 366.04333pt, top: 319.32555pt on input line 12.
+File: outdir/catalogsource.pdf Graphic file (type pdf)
+<use outdir/catalogsource.pdf>
+Package pdftex.def Info: outdir/catalogsource.pdf  used on input line 12.
+(pdftex.def)             Requested size: 42.30594pt x 6.9447pt.
+Retrieving zone 2...
+(d:\Projects\latexscratch\cropcatalog\auxdir\catalogsource_cropcatalog.txt)
+Paperwidth: 597.50787pt
+Paperheight: 845.04684pt
+Page: 1
+Xpos: 189.15892pt
+Ypos: 518.77686pt
+Package cropcatalog Info: Trim for includepdf: left: 189.15892pt, bottom: 518.77686pt, right: 366.04333pt, top: 319.32555pt on input line 14.
+File: outdir/catalogsource.pdf Graphic file (type pdf)
+<use outdir/catalogsource.pdf>
+Package pdftex.def Info: outdir/catalogsource.pdf  used on input line 14.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+File: outdir/catalogsource.pdf Graphic file (type pdf)
+<use outdir/catalogsource.pdf>
+Package pdftex.def Info: outdir/catalogsource.pdf  used on input line 14.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+File: outdir/catalogsource.pdf Graphic file (type pdf)
+<use outdir/catalogsource.pdf, page 1>
+Package pdftex.def Info: outdir/catalogsource.pdf , page1 used on input line 14.
+(pdftex.def)             Requested size: 42.30594pt x 6.9447pt.
+File: outdir/catalogsource.pdf Graphic file (type pdf)
+<use outdir/catalogsource.pdf, page 1>
+Package pdftex.def Info: outdir/catalogsource.pdf , page1 used on input line 14.
+(pdftex.def)             Requested size: 42.61385pt x 6.99524pt.
+[2 <./outdir/catalogsource.pdf>]
+File: outdir/catalogsource.pdf Graphic file (type pdf)
+<use outdir/catalogsource.pdf, page 1>
+Package pdftex.def Info: outdir/catalogsource.pdf , page1 used on input line 14.
+(pdftex.def)             Requested size: 42.61385pt x 6.99524pt.
+File: outdir/catalogsource.pdf Graphic file (type pdf)
+<use outdir/catalogsource.pdf, page 1>
+Package pdftex.def Info: outdir/catalogsource.pdf , page1 used on input line 14.
+(pdftex.def)             Requested size: 42.61385pt x 6.99524pt.
+File: outdir/catalogsource.pdf Graphic file (type pdf)
+<use outdir/catalogsource.pdf, page 1>
+Package pdftex.def Info: outdir/catalogsource.pdf , page1 used on input line 14.
+(pdftex.def)             Requested size: 42.61385pt x 6.99524pt.
+ [3]
+Retrieving zone 1...
+(d:\Projects\latexscratch\cropcatalog\auxdir\catalogsource_cropcatalog.txt)
+Paperwidth: 597.50787pt
+Paperheight: 845.04684pt
+Page: 1
+Xpos: 143.60332pt
+Ypos: 518.77686pt
+Package cropcatalog Info: Trim for includepdf: left: 143.60332pt, bottom: 518.77686pt, right: 411.68228pt, top: 306.26999pt on input line 15.
+File: outdir/catalogsource.pdf Graphic file (type pdf)
+<use outdir/catalogsource.pdf>
+Package pdftex.def Info: outdir/catalogsource.pdf  used on input line 15.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+File: outdir/catalogsource.pdf Graphic file (type pdf)
+<use outdir/catalogsource.pdf>
+Package pdftex.def Info: outdir/catalogsource.pdf  used on input line 15.
+(pdftex.def)             Requested size: 597.50682pt x 845.04504pt.
+File: outdir/catalogsource.pdf Graphic file (type pdf)
+<use outdir/catalogsource.pdf, page 1>
+Package pdftex.def Info: outdir/catalogsource.pdf , page1 used on input line 15.
+(pdftex.def)             Requested size: 42.22258pt x 20.00023pt.
+File: outdir/catalogsource.pdf Graphic file (type pdf)
+<use outdir/catalogsource.pdf, page 1>
+Package pdftex.def Info: outdir/catalogsource.pdf , page1 used on input line 15.
+(pdftex.def)             Requested size: 42.22258pt x 20.00023pt.
+File: outdir/catalogsource.pdf Graphic file (type pdf)
+<use outdir/catalogsource.pdf, page 1>
+Package pdftex.def Info: outdir/catalogsource.pdf , page1 used on input line 15.
+(pdftex.def)             Requested size: 42.22258pt x 20.00023pt.
+File: outdir/catalogsource.pdf Graphic file (type pdf)
+<use outdir/catalogsource.pdf, page 1>
+Package pdftex.def Info: outdir/catalogsource.pdf , page1 used on input line 15.
+(pdftex.def)             Requested size: 42.22258pt x 20.00023pt.
+File: outdir/catalogsource.pdf Graphic file (type pdf)
+<use outdir/catalogsource.pdf, page 1>
+Package pdftex.def Info: outdir/catalogsource.pdf , page1 used on input line 15.
+(pdftex.def)             Requested size: 42.22258pt x 20.00023pt.
+[4] (d:\Projects\latexscratch\cropcatalog\auxdir\catalogextract.aux) ) 
+Here is how much of TeX's memory you used:
+ 4416 strings out of 479321
+ 69130 string characters out of 2855629
+ 370252 words of memory out of 3000000
+ 21823 multiletter control sequences out of 15000+600000
+ 403430 words of font info for 27 fonts, out of 8000000 for 9000
+ 1141 hyphenation exceptions out of 8191
+ 83i,18n,89p,304b,542s stack positions out of 5000i,500n,10000p,200000b,80000s
+<C:/Users/Vincent/AppData/Local/Programs/MiKTeX/fonts/type1/public/amsfonts/cm/cmr10.pfb>
+Output written on d:/Projects\latexscratch\cropcatalog\outdir\catalogextract.pdf (4 pages, 31944 bytes).
+PDF statistics:
+ 60 PDF objects out of 1000 (max. 8388607)
+ 0 named destinations out of 1000 (max. 500000)
+ 137 words of extra memory for PDF output out of 10000 (max. 10000000)
+

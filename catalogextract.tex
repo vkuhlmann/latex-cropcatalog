@@ -1,0 +1,16 @@
+\documentclass{article}
+
+\usepackage[a6paper]{geometry}
+\usepackage[
+    source={outdir/catalogsource.pdf},
+    catalog={catalogsource_cropcatalog.txt}
+]{cropcatalog}
+
+\begin{document}
+    \extractAsPage{1}
+
+    Some normal page!\extractAsGraphic{2} with an image\hfill
+
+    \extractAsPage{2}
+    \extractAsPage{1}
+\end{document}

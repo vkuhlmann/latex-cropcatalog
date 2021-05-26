@@ -1,0 +1,18 @@
+\documentclass[a4paper]{article}
+\usepackage{xcolor}
+\usepackage[pagecolor={gray!5!white}]{pagecolor}
+
+\usepackage[
+    nocropframe
+    %cropframe
+    %outputCatalog={someetest.txt}
+]{cropcatalog}
+
+\begin{document}
+    \leavevmode
+    \cropbox{sometest\rule{1pt}{20pt}}\cropbox{other\textcolor{red}{test}}\rule{1pt}{200pt}
+
+    %aa
+
+    \includegraphics[width=5cm]{example-image-a}
+\end{document}

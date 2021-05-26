@@ -1,0 +1,9 @@
+\@ifundefined {sep}{\def \sep {}}{}%
+\@ifundefined {startsep}{\def \startsep {}}{}%
+\@ifundefined {endsep}{\def \endsep {}}{}%
+\startsep 
+  \cropzone {1}{}{xpos=143.60332pt, ypos=518.77686pt, width=42.22227pt, height=20.0pt, depth=0.0pt, paperwidth=597.50787pt, paperheight=845.04684pt, page=1}%
+\sep 
+  \cropzone {2}{}{xpos=189.15892pt, ypos=518.77686pt, width=42.30562pt, height=6.94444pt, depth=0.0pt, paperwidth=597.50787pt, paperheight=845.04684pt, page=1}%
+\sep 
+\endsep 
